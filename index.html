@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('file:///Users/katylennon/Desktop/coding_course/first_site/images/20160628_165006.jpg');
+      background-size: cover;
+      color: #FFC300;
+      text-shadow: -1px 0 #8D7E33, 0 1px #8D7E33, 1px 0 #8D7E33, 0 -1px #8D7E33;
+      font-family: helvetica;
+    }
+    a {color: white;}
+    h1 {font-size: 70px;}
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid #FF5733;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(128,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img width="240" height="320" src="file:///Users/katylennon/Desktop/coding_course/first_site/images/IMG_2190.jpg">
+    <h1>Study Abroad Guide</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Recommendations</a></li>
+      <li><a href="#">How to plan</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Liverpool</h2>
+    <p>Liverpool, in North West England, is a major city and metropolitan borough with an estimated population of 478,580 in 2015.</p>
+    <a href="https://en.wikipedia.org/wiki/Liverpool" style="color: black">More info</a>
+  </article>
+  <article>
+    <h2>Barcelona</h2>
+    <p>Barcelona is the capital city of the autonomous community of Catalonia in the Kingdom of Spain, as well as the country's second most populous municipality, with a population of 1.6 million within city limits.
+      Its urban area extends beyond the administrative city limits with a population of around 4.7 million people, being the sixth-most populous urban area in the European Union after Paris, London, Madrid, the Ruhr area and Milan.
+      It is the largest metropolis on the Mediterranean Sea, located on the coast between the mouths of the rivers Llobregat and Besos, and bounded to the west by the Serra de Collserola mountain range, the tallest peak of which is 512 metres (1,680 ft) high.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Belgium</h2>
+    <p>Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
